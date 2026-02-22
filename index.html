@@ -1,148 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Kratom Public Health Surveillance Review</title>
+<title>Kratom Public Health Surveillance Review | Regulatory Data Summary</title>
+
+<meta name="description" content="Independent public health review compiling CDC mortality surveillance, FDA adverse event reporting, poison control exposure data, and peer-reviewed toxicology literature related to kratom (Mitragyna speciosa). Educational resource for legislative and regulatory review.">
+
+<meta name="keywords" content="kratom public health data, kratom mortality surveillance, mitragynine toxicology, kratom adverse events, kratom poison control data, kratom regulatory review, 7-hydroxymitragynine research">
+
+<meta name="author" content="Kratom Regulatory Review">
+<meta name="theme-color" content="#0c2d48">
+
+<link rel="canonical" href="https://kratomregulatoryreview.org/">
+
+<!-- Open Graph (Facebook Safe) -->
+<meta property="og:title" content="Kratom Public Health Surveillance Review">
+<meta property="og:description" content="Educational compilation of federal surveillance data and peer-reviewed research related to kratom-associated public health outcomes.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://kratomregulatoryreview.org/">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Kratom Public Health Surveillance Review">
+<meta name="twitter:description" content="Federal surveillance summaries and toxicology research regarding kratom and its alkaloids.">
+
+<!-- Google Analytics (Your MAHA GA4) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-MQKC65VZVY"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-P31PD1SSTD"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config','G-MQKC65VZVY');
+gtag('config','G-P31PD1SSTD');
+</script>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "MedicalWebPage",
+ "name": "Kratom Public Health Surveillance Review",
+ "description": "Educational public health compilation of mortality surveillance, adverse event reporting, poison control exposure data, and peer-reviewed literature related to Mitragyna speciosa.",
+ "about": {
+   "@type": "Drug",
+   "name": "Mitragyna speciosa",
+   "alternateName": "Kratom"
+ }
+}
+</script>
 
 <link rel="stylesheet" href="css/style.css">
-</head>
 
+</head>
 <body>
 
-<!-- GOVERNMENT STYLE BANNER -->
+<!-- Government Style Banner -->
 <div class="gov-banner">
   🇺🇸 An informational public health resource. Educational reference for legislative and regulatory review.
 </div>
 
-<!-- HEADER -->
-<header class="cdc-header">
-  <div class="cdc-logo">Kratom Regulatory Review</div>
-  <div class="cdc-search">Search</div>
+<!-- Header -->
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="site-title">Kratom Regulatory Review</div>
+    <div class="site-search">Search</div>
+  </div>
 </header>
 
-<!-- NAVIGATION -->
-<nav class="cdc-nav">
-  <a href="#">Overview</a>
-  <a href="#">Mortality</a>
-  <a href="#">Adverse Events</a>
-  <a href="#">Poison Control</a>
-  <a href="#">Literature</a>
+<!-- Navigation -->
+<nav class="main-nav">
+  <div class="container nav-inner">
+    <a href="#overview">Overview</a>
+    <a href="#mortality">Mortality</a>
+    <a href="#adverse">Adverse Events</a>
+    <a href="#poison">Poison Control</a>
+    <a href="#literature">Literature</a>
+  </div>
 </nav>
 
-<section class="carousel">
-
-  <div class="slides">
-
-    <div class="slide active">
-      <img src="images/IMG_5327.jpeg" alt="Public health surveillance">
-      <div class="overlay"></div>
-      <div class="slide-content">
-        <h1>Kratom Public Health Surveillance Review</h1>
-        <p>Compilation of federal surveillance data and peer-reviewed literature.</p>
-      </div>
-    </div>
-
-    <div class="slide">
-      <img src="images/IMG_5326.jpeg" alt="Adverse event reporting">
-      <div class="overlay"></div>
-      <div class="slide-content">
-        <h1>Adverse Event Reporting</h1>
-        <p>Review of FDA databases and regulatory communications.</p>
-      </div>
-    </div>
-
-    <div class="slide">
-      <img src="images/IMG_5324.jpeg" alt="Poison control data">
-      <div class="overlay"></div>
-      <div class="slide-content">
-        <h1>Poison Control Exposure Data</h1>
-        <p>National exposure summaries and severity classifications.</p>
-      </div>
-    </div>
-
-  </div>
-
-  <div class="controls">
-    <span class="prev">&#10094;</span>
-    <span class="next">&#10095;</span>
-  </div>
-
-  <div class="indicators"></div>
-
-</section>
-
-<!-- FEATURE SECTION -->
-<section class="featured">
-  <h2>Featured Topics</h2>
-  <div class="featured-grid">
-    <div class="featured-card">
-      <img src="images/IMG_5326.jpeg">
-      <h3>Mortality Surveillance</h3>
-    </div>
-    <div class="featured-card">
-      <img src="images/IMG_5324.jpeg">
-      <h3>Poison Control Data</h3>
-    </div>
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1>Kratom Public Health Surveillance Review</h1>
+    <p class="hero-subtext">
+      Compilation of publicly available federal surveillance data,
+      adverse event reporting systems, poison control exposure summaries,
+      regulatory communications, and peer-reviewed literature related to
+      <em>Mitragyna speciosa</em> and its alkaloids.
+    </p>
   </div>
 </section>
-<script>
-const slides = document.querySelectorAll('.slide');
-const slidesContainer = document.querySelector('.slides');
-const prev = document.querySelector('.prev');
-const next = document.querySelector('.next');
-const indicators = document.querySelector('.indicators');
 
-let index = 0;
-let interval;
+<!-- Overview -->
+<section class="section" id="overview">
+  <div class="container">
+    <h2>Overview</h2>
+    <p>
+      Kratom (<em>Mitragyna speciosa</em>) is a plant-derived substance containing
+      multiple alkaloids, including mitragynine and 7-hydroxymitragynine.
+      This site consolidates publicly accessible federal and scientific sources
+      relevant to legislative and regulatory evaluation.
+    </p>
 
-function updateCarousel() {
-  slidesContainer.style.transform = `translateX(-${index * 100}%)`;
-  document.querySelectorAll('.indicators span').forEach((dot, i) => {
-    dot.classList.toggle('active', i === index);
-  });
-}
+    <p>
+      Sources include mortality surveillance systems, adverse event databases,
+      poison control exposure reporting, regulatory safety communications,
+      and peer-reviewed pharmacologic and toxicologic research.
+    </p>
+  </div>
+</section>
 
-function createIndicators() {
-  slides.forEach((_, i) => {
-    const dot = document.createElement('span');
-    dot.addEventListener('click', () => {
-      index = i;
-      updateCarousel();
-    });
-    indicators.appendChild(dot);
-  });
-  indicators.children[0].classList.add('active');
-}
+<!-- Mortality Section -->
+<section class="section alt-bg" id="mortality">
+  <div class="container">
+    <h2>Mortality Surveillance</h2>
+    <p>
+      Federal and state surveillance systems have reported cases in which
+      kratom alkaloids were identified in postmortem toxicology.
+      This section summarizes available CDC reporting and classification practices.
+    </p>
+  </div>
+</section>
 
-function nextSlide() {
-  index = (index + 1) % slides.length;
-  updateCarousel();
-}
+<!-- Adverse Events -->
+<section class="section" id="adverse">
+  <div class="container">
+    <h2>Adverse Event Reporting</h2>
+    <p>
+      The U.S. Food and Drug Administration maintains adverse event
+      reporting systems that include submissions referencing
+      kratom-containing products. This section compiles publicly
+      accessible summaries of reported clinical outcomes.
+    </p>
+  </div>
+</section>
 
-function prevSlide() {
-  index = (index - 1 + slides.length) % slides.length;
-  updateCarousel();
-}
+<!-- Poison Control -->
+<section class="section alt-bg" id="poison">
+  <div class="container">
+    <h2>Poison Control Exposure Data</h2>
+    <p>
+      National Poison Data System (NPDS) reporting includes exposure calls
+      referencing kratom. This section summarizes exposure trends,
+      reported clinical effects, and severity classifications.
+    </p>
+  </div>
+</section>
 
-next.addEventListener('click', nextSlide);
-prev.addEventListener('click', prevSlide);
-
-function startAutoSlide() {
-  interval = setInterval(nextSlide, 5000);
-}
-
-function stopAutoSlide() {
-  clearInterval(interval);
-}
-
-document.querySelector('.carousel').addEventListener('mouseover', stopAutoSlide);
-document.querySelector('.carousel').addEventListener('mouseout', startAutoSlide);
-
-createIndicators();
-startAutoSlide();
-</script>
-
-</body>
-</html>
+<!-- Literature -->
+<section class="section" id="literature">
+  <div class="container">
+    <h2>Peer-Reviewed Literature</h2>
+    <p>
+      Published research describes receptor activity, pharmacologic
+      properties, dependence potential, and toxicologic findings
+      related to mitragynine and 7-hydroxymitragynine.
+    </p>
+  </div>
+</section>
