@@ -1,36 +1,25 @@
-/* ------------------ RESET ------------------ */
+/* ---------------- RESET ---------------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ------------------ BASE ------------------ */
+/* ---------------- BASE ---------------- */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.65;
-  color: #222;
+  line-height: 1.7;
+  color: #1a1a1a;
   background: #ffffff;
-}
-
-h1, h2, h3 {
-  font-family: Georgia, serif;
-  font-weight: 600;
-  margin-bottom: 16px;
-  color: #0c2d48;
-}
-
-p {
-  margin-bottom: 16px;
 }
 
 .container {
   width: 92%;
-  max-width: 1100px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
-/* ------------------ NAVIGATION ------------------ */
+/* ---------------- HEADER ---------------- */
 .topbar {
   background: #0c2d48;
   padding: 18px 0;
@@ -52,7 +41,7 @@ p {
 .topbar nav a {
   color: #ffffff;
   text-decoration: none;
-  margin-left: 20px;
+  margin-left: 18px;
   font-size: 14px;
 }
 
@@ -60,50 +49,60 @@ p {
   text-decoration: underline;
 }
 
-/* ------------------ HERO ------------------ */
+/* ---------------- HERO TEXT BLOCK ---------------- */
 .hero {
-  position: relative;
-  height: 420px;
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
+  padding: 70px 0 40px 0;
 }
 
-.hero-overlay {
-  width: 100%;
-  height: 100%;
-  background: rgba(12, 45, 72, 0.82);
-  display: flex;
-  align-items: center;
+.hero-text h1 {
+  font-family: Georgia, serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #0c2d48;
+  margin-bottom: 20px;
 }
 
-.hero-content {
-  color: #ffffff;
-  max-width: 700px;
-}
-
-.hero h1 {
-  font-size: 42px;
-  color: #ffffff;
-  margin-bottom: 18px;
-}
-
-.hero p {
+.hero-text p {
   font-size: 18px;
-  color: #e6eef6;
+  color: #333;
+  max-width: 760px;
 }
 
-/* ------------------ SECTIONS ------------------ */
+/* ---------------- HERO IMAGE ---------------- */
+.hero-image img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  display: block;
+}
+
+/* ---------------- SECTIONS ---------------- */
 .section {
   padding: 70px 0;
 }
 
 .alt-bg {
-  background: #f3f7fb;
+  background: #f3f6f9;
 }
 
-/* ------------------ GRID CARDS ------------------ */
+h2 {
+  font-family: Georgia, serif;
+  font-size: 28px;
+  color: #0c2d48;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: Georgia, serif;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+p {
+  margin-bottom: 18px;
+}
+
+/* ---------------- GRID ---------------- */
 .grid {
   display: grid;
   gap: 40px;
@@ -111,14 +110,9 @@ p {
 
 .card {
   background: #ffffff;
-  border: 1px solid #e4e8ed;
+  border: 1px solid #e3e7eb;
   padding: 30px;
   border-radius: 6px;
-  transition: 0.2s ease;
-}
-
-.card:hover {
-  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
 }
 
 .card-img {
@@ -129,39 +123,23 @@ p {
   border-radius: 4px;
 }
 
-/* ------------------ FAQ ------------------ */
-.faq-item {
-  margin-bottom: 28px;
-}
-
-.faq-item h3 {
-  font-size: 18px;
-  color: #0c2d48;
-}
-
-/* ------------------ FOOTER ------------------ */
+/* ---------------- FOOTER ---------------- */
 .footer {
   background: #0c2d48;
   color: #ffffff;
   padding: 40px 0;
-  font-size: 14px;
   text-align: center;
+  font-size: 14px;
 }
 
-/* ------------------ DESKTOP GRID ------------------ */
-@media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 1024px) {
+/* ---------------- DESKTOP ---------------- */
+@media (min-width: 900px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* ------------------ MOBILE FIXES ------------------ */
+/* ---------------- MOBILE ---------------- */
 @media (max-width: 768px) {
 
   .topbar .container {
@@ -178,21 +156,15 @@ p {
     margin: 6px 10px 6px 0;
   }
 
-  .hero {
-    height: auto;
-    padding: 60px 0;
+  .hero-text h1 {
+    font-size: 28px;
   }
 
-  .hero h1 {
-    font-size: 30px;
-  }
-
-  .hero p {
+  .hero-text p {
     font-size: 16px;
   }
 
-  .card-img {
-    height: 180px;
+  .hero-image img {
+    height: 240px;
   }
-
 }
