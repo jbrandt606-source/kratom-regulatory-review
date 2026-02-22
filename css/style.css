@@ -221,3 +221,65 @@ body {
     font-size: 26px;
   }
 }
+
+/* ================= MOBILE FIX ================= */
+
+@media (max-width: 768px) {
+
+  /* Reduce hero height */
+  .carousel {
+    height: 360px;
+  }
+
+  .slide-content {
+    bottom: 50px;
+    left: 20px;
+    right: 20px;
+  }
+
+  .slide-content h1 {
+    font-size: 24px;
+    line-height: 1.2;
+  }
+
+  .slide-content p {
+    font-size: 14px;
+  }
+
+  /* Make nav horizontal instead of stacked */
+  .cdc-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 12px 10px;
+  }
+
+  .cdc-nav a {
+    font-size: 14px;
+    margin: 6px 8px;
+  }
+
+  /* Fix featured section */
+  .featured {
+    padding: 40px 20px;
+  }
+
+  .featured h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .featured-grid {
+    flex-direction: column;
+  }
+
+  .featured-card img {
+    height: 180px;
+  }
+
+  /* Reduce large white gaps */
+  .section {
+    padding: 40px 20px;
+  }
+
+}
