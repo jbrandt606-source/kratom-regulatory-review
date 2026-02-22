@@ -1,170 +1,155 @@
-/* ---------------- RESET ---------------- */
+/* ---------- RESET ---------- */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* ---------------- BASE ---------------- */
+/* ---------- BASE ---------- */
 body {
   font-family: "Helvetica Neue", Arial, sans-serif;
-  line-height: 1.7;
-  color: #1a1a1a;
-  background: #ffffff;
+  line-height: 1.75;
+  color: #222;
+  background: #fff;
 }
 
 .container {
-  width: 92%;
-  max-width: 1000px;
+  width: 90%;
+  max-width: 920px;
   margin: 0 auto;
 }
 
-/* ---------------- HEADER ---------------- */
+/* ---------- HEADER ---------- */
 .topbar {
   background: #0c2d48;
-  padding: 18px 0;
-}
-
-.topbar .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  padding: 14px 0;
 }
 
 .logo {
-  color: #ffffff;
+  color: #fff;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 18px;
+}
+
+.topbar nav {
+  margin-top: 6px;
 }
 
 .topbar nav a {
-  color: #ffffff;
+  color: #cfe2f3;
   text-decoration: none;
-  margin-left: 18px;
   font-size: 14px;
+  margin-right: 14px;
 }
 
 .topbar nav a:hover {
   text-decoration: underline;
 }
 
-/* ---------------- HERO TEXT BLOCK ---------------- */
+/* ---------- HERO TEXT ---------- */
 .hero {
-  padding: 70px 0 40px 0;
+  padding: 60px 0 30px 0;
 }
 
-.hero-text h1 {
+.hero h1 {
   font-family: Georgia, serif;
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 600;
   color: #0c2d48;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 
-.hero-text p {
-  font-size: 18px;
+.hero p {
+  font-size: 17px;
   color: #333;
   max-width: 760px;
 }
 
-/* ---------------- HERO IMAGE ---------------- */
+/* ---------- HERO IMAGE ---------- */
 .hero-image img {
   width: 100%;
-  height: 360px;
+  height: 280px;
   object-fit: cover;
-  display: block;
+  margin: 30px 0 10px 0;
+  border-radius: 4px;
 }
 
-/* ---------------- SECTIONS ---------------- */
+/* ---------- SECTION ---------- */
 .section {
-  padding: 70px 0;
+  padding: 60px 0;
 }
 
 .alt-bg {
-  background: #f3f6f9;
+  background: #f6f8fa;
 }
 
 h2 {
   font-family: Georgia, serif;
-  font-size: 28px;
+  font-size: 24px;
+  margin-bottom: 18px;
   color: #0c2d48;
-  margin-bottom: 20px;
 }
 
 h3 {
   font-family: Georgia, serif;
-  font-size: 20px;
-  margin-bottom: 12px;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #0c2d48;
 }
 
 p {
   margin-bottom: 18px;
 }
 
-/* ---------------- GRID ---------------- */
+/* ---------- GRID ---------- */
 .grid {
   display: grid;
-  gap: 40px;
+  gap: 30px;
 }
 
 .card {
-  background: #ffffff;
-  border: 1px solid #e3e7eb;
-  padding: 30px;
+  padding: 25px;
+  border: 1px solid #e4e7eb;
   border-radius: 6px;
+  background: #fff;
 }
 
 .card-img {
   width: 100%;
-  height: 220px;
+  height: 180px;
   object-fit: cover;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   border-radius: 4px;
 }
 
-/* ---------------- FOOTER ---------------- */
+/* ---------- FOOTER ---------- */
 .footer {
   background: #0c2d48;
-  color: #ffffff;
-  padding: 40px 0;
+  color: #fff;
   text-align: center;
-  font-size: 14px;
+  padding: 30px 0;
+  font-size: 13px;
 }
 
-/* ---------------- DESKTOP ---------------- */
+/* ---------- DESKTOP GRID ---------- */
 @media (min-width: 900px) {
   .grid {
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
-/* ---------------- MOBILE ---------------- */
+/* ---------- MOBILE ---------- */
 @media (max-width: 768px) {
 
-  .topbar .container {
-    flex-direction: column;
-    align-items: flex-start;
+  .hero h1 {
+    font-size: 26px;
   }
 
-  .topbar nav {
-    margin-top: 10px;
-  }
-
-  .topbar nav a {
-    display: inline-block;
-    margin: 6px 10px 6px 0;
-  }
-
-  .hero-text h1 {
-    font-size: 28px;
-  }
-
-  .hero-text p {
+  .hero p {
     font-size: 16px;
   }
 
   .hero-image img {
-    height: 240px;
+    height: 220px;
   }
 }
