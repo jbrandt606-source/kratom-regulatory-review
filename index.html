@@ -87,6 +87,62 @@
     </div>
   </div>
 </section>
+<script>
+const slides = document.querySelectorAll('.slide');
+const slidesContainer = document.querySelector('.slides');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
+const indicators = document.querySelector('.indicators');
+
+let index = 0;
+let interval;
+
+function updateCarousel() {
+  slidesContainer.style.transform = `translateX(-${index * 100}%)`;
+  document.querySelectorAll('.indicators span').forEach((dot, i) => {
+    dot.classList.toggle('active', i === index);
+  });
+}
+
+function createIndicators() {
+  slides.forEach((_, i) => {
+    const dot = document.createElement('span');
+    dot.addEventListener('click', () => {
+      index = i;
+      updateCarousel();
+    });
+    indicators.appendChild(dot);
+  });
+  indicators.children[0].classList.add('active');
+}
+
+function nextSlide() {
+  index = (index + 1) % slides.length;
+  updateCarousel();
+}
+
+function prevSlide() {
+  index = (index - 1 + slides.length) % slides.length;
+  updateCarousel();
+}
+
+next.addEventListener('click', nextSlide);
+prev.addEventListener('click', prevSlide);
+
+function startAutoSlide() {
+  interval = setInterval(nextSlide, 5000);
+}
+
+function stopAutoSlide() {
+  clearInterval(interval);
+}
+
+document.querySelector('.carousel').addEventListener('mouseover', stopAutoSlide);
+document.querySelector('.carousel').addEventListener('mouseout', startAutoSlide);
+
+createIndicators();
+startAutoSlide();
+</script>
 
 </body>
 </html>
