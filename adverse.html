@@ -7,7 +7,7 @@
 
 <title>Kratom Adverse Events | FDA FAERS & CAERS (Mitragynine)</title>
 
-<meta name="description" content="Legislative reference page summarizing FDA adverse event reporting signals for kratom/mitragynine using FAERS and CAERS headline counts. Snapshot captured January 2026.">
+<meta name="description" content="Legislative reference page summarizing FDA adverse event reporting data for kratom (mitragynine) using FAERS and CAERS. Snapshot captured January 2026.">
 
 <meta name="keywords" content="kratom adverse events, mitragynine FAERS, mitragynine CAERS, FDA adverse event reporting, kratom hospitalizations, kratom deaths reports">
 
@@ -30,44 +30,31 @@ gtag('config','G-P31PD1SSTD');
 <link rel="stylesheet" href="css/style.css">
 
 <style>
-  .page-header { padding: 40px 0 25px 0; }
-  .page-intro { max-width: 900px; margin-bottom: 12px; line-height: 1.7; }
-  .page-note { max-width: 900px; font-size: 14px; color: #4b5563; margin-bottom: 15px; }
-  .meta-line { font-size:14px; color:#4b5563; margin-top:10px; font-weight:600; }
+.page-header { padding: 40px 0 25px 0; }
+.page-intro { max-width: 900px; margin-bottom: 12px; line-height: 1.7; }
+.page-note { max-width: 900px; font-size: 14px; color: #4b5563; margin-bottom: 15px; }
+.meta-line { font-size:14px; color:#4b5563; margin-top:10px; font-weight:600; }
 
-  .accordion { max-width:1100px; margin:40px auto; }
-  .accordion-item { border:1px solid #e2e8f0; border-radius:12px; margin-bottom:18px; overflow:hidden; }
-  .accordion-header { background:#0c2d48; color:#fff; padding:18px; font-size:18px; font-weight:600; cursor:pointer; }
-  .accordion-content { display:none; padding:20px; background:#f9fafb; }
+.accordion { max-width:1100px; margin:40px auto; }
+.accordion-item { border:1px solid #e2e8f0; border-radius:12px; margin-bottom:18px; overflow:hidden; }
+.accordion-header { background:#0c2d48; color:#fff; padding:18px; font-size:18px; font-weight:600; cursor:pointer; }
+.accordion-content { display:none; padding:20px; background:#f9fafb; }
 
-  .case-list { list-style:none; padding:0; margin:0; display:grid; gap:16px; }
+.data-card { border:1px solid #e2e8f0; border-radius:10px; padding:16px; background:#ffffff; }
+.pill { display:inline-block; font-size:12px; font-weight:600; padding:6px 10px; border-radius:999px; background:#e7eef7; color:#0c2d48; margin-bottom:10px; }
 
-  .data-card { border:1px solid #e2e8f0; border-radius:10px; padding:16px; background:#fff; }
-  .data-title { font-weight:700; font-size:16px; margin-bottom:6px; }
-  .data-subtitle { font-size:14px; color:#4b5563; margin-bottom:10px; line-height:1.6; }
+.metrics-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px; }
+.metric-box { border:1px solid #e2e8f0; border-radius:10px; padding:14px; background:#ffffff; }
+.metric-label { font-size:13px; color:#6b7280; margin-bottom:4px; }
+.metric-value { font-size:26px; font-weight:800; line-height:1.1; color:#111827; }
+.metric-value.danger { color:#b91c1c; }
+.metric-value.warn { color:#b45309; }
 
-  .pill { display:inline-block; font-size:12px; font-weight:600; padding:6px 10px; border-radius:999px; background:#e7eef7; color:#0c2d48; margin-bottom:10px; }
+.link-row { margin-top:14px; display:flex; flex-wrap:wrap; gap:10px; }
+.case-link { font-size:14px; text-decoration:none; color:#0c2d48; border:1px solid #0c2d48; padding:8px 12px; border-radius:10px; display:inline-block; font-weight:600; }
+.case-link:hover { background:#0c2d48; color:#fff; }
 
-  .metrics-grid { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:10px; }
-  .metric-box { border:1px solid #e2e8f0; border-radius:10px; padding:14px; background:#ffffff; }
-  .metric-label { font-size:13px; color:#6b7280; margin-bottom:4px; }
-  .metric-value { font-size:26px; font-weight:800; line-height:1.1; color:#111827; }
-
-  .metric-value.danger { color:#b91c1c; }
-  .metric-value.warn { color:#b45309; }
-
-  .link-row { margin-top:14px; display:flex; flex-wrap:wrap; gap:10px; }
-  .case-link { font-size:14px; text-decoration:none; color:#0c2d48; border:1px solid #0c2d48; padding:8px 12px; border-radius:10px; display:inline-block; font-weight:600; }
-  .case-link:hover { background:#0c2d48; color:#fff; }
-
-  .brief-table { width:100%; border-collapse:collapse; margin-top:14px; background:#fff; border:1px solid #e2e8f0; border-radius:12px; overflow:hidden; }
-  .brief-table th, .brief-table td { padding:12px; border-bottom:1px solid #e2e8f0; text-align:left; font-size:14px; vertical-align:top; }
-  .brief-table th { background:#f1f5f9; font-weight:700; }
-  .brief-table tr:last-child td { border-bottom:none; }
-
-  .small { font-size:13px; color:#6b7280; margin-top:10px; line-height:1.6; }
-
-  .footer { background:#0c2d48; color:#fff; padding:30px 0; text-align:center; margin-top:40px; }
+.footer { background:#0c2d48; color:#fff; padding:30px 0; text-align:center; margin-top:40px; }
 </style>
 
 <script>
@@ -83,41 +70,23 @@ document.addEventListener("DOMContentLoaded", function(){
 </script>
 
 </head>
-
 <body>
-
-<div class="gov-banner">
-🇺🇸 Informational public health resource. Educational reference for legislative and regulatory review.
-</div>
-
-<header class="site-header">
-  <div class="container header-inner">
-    <div class="site-title">Kratom Regulatory Review</div>
-  </div>
-</header>
-
-<nav class="main-nav">
-  <div class="container nav-inner">
-    <a href="index.html">Overview</a>
-    <a href="mortality.html">Mortality</a>
-    <a href="adverse.html" class="active">Adverse Events</a>
-    <a href="KratomCaseReports.html">Case Reports</a>
-  </div>
-</nav>
 
 <section class="page-header">
   <div class="container">
     <h1>FAERS + CAERS • Kratom (Mitragynine)</h1>
 
     <p class="page-intro">
-      This page summarizes FDA adverse event reporting signals for kratom/mitragynine using two federal
-      spontaneous reporting systems: <strong>CAERS</strong> (foods & dietary supplements) and <strong>FAERS</strong> (drugs & biologics).
-      These systems help detect safety signals from real-world reports.
+      This page summarizes FDA adverse event reporting data for kratom (mitragynine)
+      using two federal surveillance systems:
+      <strong>FAERS</strong> (FDA Adverse Event Reporting System) and
+      <strong>CAERS</strong> (Center for Food Safety and Applied Nutrition Adverse Event Reporting System).
     </p>
 
     <p class="page-note">
-      Reports in FAERS and CAERS are voluntary and may be incomplete or duplicative.
-      They describe reported associations and do not independently establish incidence or causation.
+      Both systems collect voluntary reports from healthcare professionals,
+      consumers, and manufacturers. Reports may include multiple substances
+      and do not independently establish causation or incidence.
     </p>
 
     <div class="meta-line">Snapshot captured: <strong>January 2026</strong></div>
@@ -126,79 +95,19 @@ document.addEventListener("DOMContentLoaded", function(){
 
 <div class="accordion">
 
-<!-- ================= HEADLINE TABLE ================= -->
-
-<div class="accordion-item">
-  <div class="accordion-header">
-    Headline Counts (Kratom/Mitragynine)
-  </div>
-
-  <div class="accordion-content">
-    <div class="data-card">
-      <div class="data-title">Legislative Summary Table</div>
-      <div class="data-subtitle">
-        Headline counts below reflect reports filtered to kratom/mitragynine, using MAHA’s compiled snapshots
-        (January 2026). “Deaths” and “Hospitalizations” reflect outcomes recorded in reports.
-      </div>
-
-      <table class="brief-table">
-        <thead>
-          <tr>
-            <th style="width:26%;">Dataset</th>
-            <th style="width:18%;">Scope</th>
-            <th style="width:14%;">Total reports</th>
-            <th style="width:14%;">Deaths</th>
-            <th style="width:14%;">Hospitalizations</th>
-            <th style="width:14%;">Other</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><strong>FDA CAERS</strong><br><span class="small">Foods & Dietary Supplements</span></td>
-            <td>Kratom / Mitragynine only</td>
-            <td><strong>743</strong></td>
-            <td><strong>258</strong></td>
-            <td><strong>191</strong></td>
-            <td><strong>Serious cases:</strong> 404</td>
-          </tr>
-          <tr>
-            <td><strong>FDA FAERS</strong><br><span class="small">Drugs & Biologics</span></td>
-            <td>Kratom / Mitragynine only</td>
-            <td><strong>1,470</strong></td>
-            <td><strong>722</strong></td>
-            <td><strong>370</strong></td>
-            <td><strong>% with death outcome:</strong> 49%</td>
-          </tr>
-        </tbody>
-      </table>
-
-      <div class="small">
-        Data source: MAHA FAERS/CAERS kratom (mitragynine) snapshots. Dataset last updated in MAHA: <strong>January 20, 2026</strong>.
-      </div>
-
-      <div class="link-row">
-        <a class="case-link" href="https://www.mothersagainstherbalabuse.org/literature/adverseeventskratom.html" target="_blank">View MAHA Source Page →</a>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-<!-- ================= CAERS ================= -->
-
+<!-- CAERS -->
 <div class="accordion-item">
   <div class="accordion-header">
     FDA CAERS (Foods & Dietary Supplements)
   </div>
-
   <div class="accordion-content">
     <div class="data-card">
       <div class="pill">KRATOM • MITRAGYNINE</div>
-      <div class="data-title">Mitragynine (Kratom) — CAERS Snapshot</div>
-      <div class="data-subtitle">
-        CAERS is FDA CFSAN’s adverse event reporting system for foods and dietary supplements.
-        Reports do not prove causation, but they can help identify safety signals and patterns.
-      </div>
+      <p style="font-size:14px; line-height:1.7;">
+        CAERS (Center for Food Safety and Applied Nutrition Adverse Event Reporting System)
+        collects reports involving foods and dietary supplements. These reports may include
+        hospitalizations, serious medical outcomes, and deaths recorded in submitted cases.
+      </p>
 
       <div class="metrics-grid">
         <div class="metric-box">
@@ -214,43 +123,33 @@ document.addEventListener("DOMContentLoaded", function(){
           <div class="metric-value warn">191</div>
         </div>
         <div class="metric-box">
-          <div class="metric-label">Serious cases (reported classification)</div>
+          <div class="metric-label">Serious cases</div>
           <div class="metric-value">404</div>
         </div>
       </div>
 
-      <div class="small" style="margin-top:12px;">
-        Dataset last updated (MAHA snapshot): <strong>January 20, 2026</strong>.
-      </div>
-
       <div class="link-row">
-        <a class="case-link" href="https://www.fda.gov/food/foodborneillnesscontaminants/cfsan-adverse-event-reporting-system-caers" target="_blank">
-          FDA CAERS Overview →
-        </a>
-        <a class="case-link" href="https://www.mothersagainstherbalabuse.org/literature/adverseeventskratom.html" target="_blank">
-          MAHA CAERS Snapshot Page →
+        <a class="case-link" href="https://open.fda.gov/data/caers/" target="_blank">
+          OpenFDA CAERS Data →
         </a>
       </div>
     </div>
   </div>
 </div>
 
-
-<!-- ================= FAERS ================= -->
-
+<!-- FAERS -->
 <div class="accordion-item">
   <div class="accordion-header">
     FDA FAERS (Drugs & Biologics)
   </div>
-
   <div class="accordion-content">
     <div class="data-card">
       <div class="pill">KRATOM • MITRAGYNINE</div>
-      <div class="data-title">Mitragynine (Kratom) — FAERS Snapshot</div>
-      <div class="data-subtitle">
-        FAERS is the FDA’s adverse event reporting system for drugs and biologics.
-        Like CAERS, it detects safety signals from reported outcomes and does not, by itself, prove causation.
-      </div>
+      <p style="font-size:14px; line-height:1.7;">
+        FAERS (FDA Adverse Event Reporting System) collects adverse event reports
+        related to drugs and biologic products. As with CAERS, reports describe
+        submitted outcomes and do not independently confirm causation.
+      </p>
 
       <div class="metrics-grid">
         <div class="metric-box">
@@ -271,43 +170,27 @@ document.addEventListener("DOMContentLoaded", function(){
         </div>
       </div>
 
-      <div class="small" style="margin-top:12px;">
-        Dataset last updated (MAHA snapshot): <strong>January 20, 2026</strong>.
-      </div>
-
       <div class="link-row">
-        <a class="case-link" href="https://www.fda.gov/drugs/questions-and-answers-fdas-adverse-event-reporting-system-faers/fda-adverse-event-reporting-system-faers-public-dashboard" target="_blank">
-          FDA FAERS Public Dashboard →
-        </a>
-        <a class="case-link" href="https://www.mothersagainstherbalabuse.org/literature/adverseeventskratom.html" target="_blank">
-          MAHA FAERS Snapshot Page →
+        <a class="case-link" href="https://open.fda.gov/apis/drug/event/" target="_blank">
+          OpenFDA FAERS Data →
         </a>
       </div>
     </div>
   </div>
 </div>
 
-
-<!-- ================= HOW TO INTERPRET ================= -->
-
+<!-- Interpretation -->
 <div class="accordion-item">
   <div class="accordion-header">
-    How to Interpret These Datasets (Plain Language)
+    How to Interpret These Datasets
   </div>
-
   <div class="accordion-content">
     <div class="data-card">
-      <div class="data-title">What these numbers mean</div>
-      <p style="font-size:14px; color:#374151; line-height:1.7; margin:0;">
-        FAERS and CAERS are designed to help detect safety signals — patterns that may warrant closer review.
-        Reports can be submitted by health professionals, consumers, and manufacturers. A report may include
-        multiple products or substances, and reporting intensity can change over time based on media attention,
-        product labeling, and clinical awareness.
-      </p>
-      <p style="font-size:14px; color:#374151; line-height:1.7; margin:12px 0 0 0;">
-        These datasets are useful for identifying what outcomes are being reported (e.g., hospitalization or death),
-        but they do not establish how often an outcome occurs in the population and do not independently prove that
-        kratom caused the outcome.
+      <p style="font-size:14px; line-height:1.7; margin:0;">
+        FAERS and CAERS are designed for signal detection.
+        Reports may involve multiple products or substances and are influenced
+        by reporting practices. These datasets identify reported outcomes but
+        do not determine how frequently an outcome occurs in the population.
       </p>
     </div>
   </div>
